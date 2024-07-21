@@ -71,13 +71,14 @@
 
     
 --------------------------------------------*/
-/* @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css);
 /* -------------------------------------------
 
 main
 
 ------------------------------------------- */
+
 *,
 *:before,
 *:after {
@@ -422,6 +423,7 @@ a {
 }
 
 .mil-muted {
+	font-family: "Domaine-regular", serif;
 	color: rgba(255, 255, 255, 0.9);
 }
 
@@ -525,9 +527,26 @@ a {
 
 /* -------------------------------------------
 
+tab
+
+------------------------------------------- */
+
+.mil-tab {
+	background-color: white;
+	border-radius: 9999px; /* Fully rounded corners */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+	padding: 0.5rem 1rem; /* Padding inside the card */
+	text-align: center;
+	color: #1f2937; /* Dark text color */
+	font-weight: 600;
+}
+
+/* -------------------------------------------
+
 link
 
 ------------------------------------------- */
+
 .mil-link {
 	cursor: pointer;
 	display: -webkit-inline-box;
