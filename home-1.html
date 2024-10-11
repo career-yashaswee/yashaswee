@@ -57,7 +57,7 @@
 
       <!-- preloader -->
 
-      <div class="mil-preloader">
+      <!-- <div class="mil-preloader">
         <div class="mil-preloader-animation">
           <div class="mil-pos-abs mil-animation-1">
             <p class="mil-h3 mil-muted mil-thin">Data Science</p>
@@ -71,7 +71,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- preloader end -->
 
       <!-- scrollbar progress -->
@@ -1171,16 +1171,40 @@
                       <div class="col-md-6 col-lg-5">
                         <ul class="mil-menu-list mil-up mil-mb-60">
                           <li>
-                            <a href="#." class="mil-light-soft">Resume</a>
+                            <a
+                              href="https://yourresume.com"
+                              class="mil-light-soft"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Resume</a
+                            >
                           </li>
                           <li>
-                            <a href="#." class="mil-light-soft">LinkedIn</a>
+                            <a
+                              href="https://linkedin.com/in/yourprofile"
+                              class="mil-light-soft"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >LinkedIn</a
+                            >
                           </li>
                           <li>
-                            <a href="#." class="mil-light-soft">GitHub</a>
+                            <a
+                              href="https://github.com/yourusername"
+                              class="mil-light-soft"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >GitHub</a
+                            >
                           </li>
                           <li>
-                            <a href="#." class="mil-light-soft">Leetcode</a>
+                            <a
+                              href="https://leetcode.com/yourusername"
+                              class="mil-light-soft"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Leetcode</a
+                            >
                           </li>
                         </ul>
                       </div>
@@ -1425,5 +1449,14 @@
     <script src="js/plugins/ScrollTo.min.js"></script>
     <!-- ashley js -->
     <script src="js/main.js"></script>
+    <script>
+      // Add event listener to all anchor tags in the .mil-menu-list
+      document.querySelectorAll(".mil-menu-list a").forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          e.preventDefault(); // This should prevent the main page from changing URL
+          window.open(this.href, "_blank"); // This opens the external link in a new tab
+        });
+      });
+    </script>
   </body>
 </html>
